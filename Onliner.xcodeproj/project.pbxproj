@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,19 @@
 		7D0BE7BF2534A036005B2167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0BE7BD2534A036005B2167 /* Main.storyboard */; };
 		7D0BE7C12534A03C005B2167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0BE7C02534A03C005B2167 /* Assets.xcassets */; };
 		7D0BE7C42534A03C005B2167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0BE7C22534A03C005B2167 /* LaunchScreen.storyboard */; };
+		7D0BE7CE2534B18B005B2167 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BE7CD2534B18B005B2167 /* Post.swift */; };
+		7D0BE7D22534B21B005B2167 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BE7D12534B21B005B2167 /* TimelineViewController.swift */; };
+		7D22BA9225363188006422D9 /* PostMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22BA9125363188006422D9 /* PostMessageViewController.swift */; };
+		7D22BA95253634D5006422D9 /* TimelineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22BA93253634D5006422D9 /* TimelineViewCell.swift */; };
+		7D22BA96253634D5006422D9 /* TimelineViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA94253634D5006422D9 /* TimelineViewCell.xib */; };
+		7D22BA98253652EA006422D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA97253652EA006422D9 /* GoogleService-Info.plist */; };
+		7D22BA9B2536D93A006422D9 /* likeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA992536D939006422D9 /* likeButton.png */; };
+		7D22BA9C2536D93A006422D9 /* doneLikeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA9A2536D93A006422D9 /* doneLikeButton.png */; };
+		C53D3D3199EB95C1E9898579 /* Pods_Onliner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EBB52D58E08E230DAF42EB /* Pods_Onliner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FBE1E9BDAD9D41A1C9C4A76 /* Pods-Onliner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onliner.debug.xcconfig"; path = "Target Support Files/Pods-Onliner/Pods-Onliner.debug.xcconfig"; sourceTree = "<group>"; };
 		7D0BE7B42534A036005B2167 /* Onliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0BE7B72534A036005B2167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0BE7B92534A036005B2167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,16 @@
 		7D0BE7C02534A03C005B2167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0BE7C32534A03C005B2167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D0BE7C52534A03C005B2167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0BE7CD2534B18B005B2167 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7D0BE7D12534B21B005B2167 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		7D22BA9125363188006422D9 /* PostMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewController.swift; sourceTree = "<group>"; };
+		7D22BA93253634D5006422D9 /* TimelineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewCell.swift; sourceTree = "<group>"; };
+		7D22BA94253634D5006422D9 /* TimelineViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineViewCell.xib; sourceTree = "<group>"; };
+		7D22BA97253652EA006422D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D22BA992536D939006422D9 /* likeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeButton.png; sourceTree = "<group>"; };
+		7D22BA9A2536D93A006422D9 /* doneLikeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doneLikeButton.png; sourceTree = "<group>"; };
+		9D311E2572A029CB6814A01D /* Pods-Onliner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onliner.release.xcconfig"; path = "Target Support Files/Pods-Onliner/Pods-Onliner.release.xcconfig"; sourceTree = "<group>"; };
+		A7EBB52D58E08E230DAF42EB /* Pods_Onliner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onliner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53D3D3199EB95C1E9898579 /* Pods_Onliner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1537A5DE80F9BA39B6CBBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EBB52D58E08E230DAF42EB /* Pods_Onliner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AA743B9DB49EB19801CB4B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FBE1E9BDAD9D41A1C9C4A76 /* Pods-Onliner.debug.xcconfig */,
+				9D311E2572A029CB6814A01D /* Pods-Onliner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D0BE7AB2534A036005B2167 = {
 			isa = PBXGroup;
 			children = (
 				7D0BE7B62534A036005B2167 /* Onliner */,
 				7D0BE7B52534A036005B2167 /* Products */,
+				2AA743B9DB49EB19801CB4B5 /* Pods */,
+				0D1537A5DE80F9BA39B6CBBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +96,20 @@
 		7D0BE7B62534A036005B2167 /* Onliner */ = {
 			isa = PBXGroup;
 			children = (
+				7D22BA9A2536D93A006422D9 /* doneLikeButton.png */,
+				7D22BA992536D939006422D9 /* likeButton.png */,
 				7D0BE7B72534A036005B2167 /* AppDelegate.swift */,
 				7D0BE7B92534A036005B2167 /* SceneDelegate.swift */,
 				7D0BE7BB2534A036005B2167 /* ViewController.swift */,
-				7D0BE7BD2534A036005B2167 /* Main.storyboard */,
+				7D0BE7D12534B21B005B2167 /* TimelineViewController.swift */,
+				7D22BA9125363188006422D9 /* PostMessageViewController.swift */,
+				7D0BE7CD2534B18B005B2167 /* Post.swift */,
+				7D22BA93253634D5006422D9 /* TimelineViewCell.swift */,
 				7D0BE7C02534A03C005B2167 /* Assets.xcassets */,
+				7D0BE7BD2534A036005B2167 /* Main.storyboard */,
 				7D0BE7C22534A03C005B2167 /* LaunchScreen.storyboard */,
+				7D22BA94253634D5006422D9 /* TimelineViewCell.xib */,
+				7D22BA97253652EA006422D9 /* GoogleService-Info.plist */,
 				7D0BE7C52534A03C005B2167 /* Info.plist */,
 			);
 			path = Onliner;
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0BE7C82534A03C005B2167 /* Build configuration list for PBXNativeTarget "Onliner" */;
 			buildPhases = (
+				08A38C5DD045B1BCA5C4784C /* [CP] Check Pods Manifest.lock */,
 				7D0BE7B02534A036005B2167 /* Sources */,
 				7D0BE7B12534A036005B2167 /* Frameworks */,
 				7D0BE7B22534A036005B2167 /* Resources */,
+				E706D241F5E0FACB53B5D5C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +175,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D22BA9C2536D93A006422D9 /* doneLikeButton.png in Resources */,
 				7D0BE7C42534A03C005B2167 /* LaunchScreen.storyboard in Resources */,
 				7D0BE7C12534A03C005B2167 /* Assets.xcassets in Resources */,
+				7D22BA98253652EA006422D9 /* GoogleService-Info.plist in Resources */,
+				7D22BA96253634D5006422D9 /* TimelineViewCell.xib in Resources */,
+				7D22BA9B2536D93A006422D9 /* likeButton.png in Resources */,
 				7D0BE7BF2534A036005B2167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A38C5DD045B1BCA5C4784C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Onliner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E706D241F5E0FACB53B5D5C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Onliner/Pods-Onliner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Onliner/Pods-Onliner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Onliner/Pods-Onliner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D0BE7B02534A036005B2167 /* Sources */ = {
@@ -140,7 +236,11 @@
 			files = (
 				7D0BE7BC2534A036005B2167 /* ViewController.swift in Sources */,
 				7D0BE7B82534A036005B2167 /* AppDelegate.swift in Sources */,
+				7D22BA95253634D5006422D9 /* TimelineViewCell.swift in Sources */,
+				7D22BA9225363188006422D9 /* PostMessageViewController.swift in Sources */,
 				7D0BE7BA2534A036005B2167 /* SceneDelegate.swift in Sources */,
+				7D0BE7CE2534B18B005B2167 /* Post.swift in Sources */,
+				7D0BE7D22534B21B005B2167 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +382,7 @@
 		};
 		7D0BE7C92534A03C005B2167 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBE1E9BDAD9D41A1C9C4A76 /* Pods-Onliner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +401,7 @@
 		};
 		7D0BE7CA2534A03C005B2167 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D311E2572A029CB6814A01D /* Pods-Onliner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
