@@ -1,0 +1,6 @@
+framework module Pods_Onliner {
+  umbrella header "Pods-Onliner-umbrella.h"
+
+  export *
+  module * { export * }
+}

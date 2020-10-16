@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+//データソースメソッドの追加とデリゲートメソッドの追加
 class TimelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
     @IBOutlet var timelineTableView: UITableView!
@@ -20,23 +20,22 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
     super.viewDidLoad()
         
-        timelineTableView.delegate = self
-        timelineTableView.dataSource = self
         
+        timelineTableView.delegate = self
+        timelineTableView.dataSource = self//タイムラインテーブルビューのデリゲートメソッドとデータソースメソッドはTimelineViewControllerメソッドに書くよ
+        
+        //TimelineViewCell.xibファイルを呼び出す！
         let xib = UINib(nibName: "TimelineViewCell", bundle: nil)
+        //テーブルビューにセルidentifierを登録
         timelineTableView.register(xib, forCellReuseIdentifier: "Cell")
+        
     }
 
-    //ログインでidを記入しなかったら匿名と表示される
-//    if nameTextField.isEmpty {
-//        nameTextField = "匿名"
-//    }
-//    idLabel.text = "ID: \(id)"
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-
+       
+        //ドキュメントの取得
         dataBase.collection("users").order(by: "lastUpdated", descending: true).getDocuments { (snapshot, error) in
                 if error == nil, let snapshot = snapshot {
                     self.postArray = []
@@ -45,10 +44,13 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
                         let post = Post(data: data)
                         self.postArray.append(post)
                     }
+                    //データの更新
                     self.timelineTableView.reloadData()
+                    
                 }
-            }
         }
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -59,20 +61,23 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postArray.count
     }
-    
+    //セルの高さの調整
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 66
+        return 220
     }
     
+    //セルの表示
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
          as! TimelineViewCell
         //identifierを元に、セルを呼び出し
         
         //セルに、表示する
-        cell.nameLabel?.text = postArray[indexPath.row].userName
+        cell.nameLabel?.text = postArray[indexPath.row].userName//ポストアレイに保存されているデータから、usernameを呼び出している
         cell.messageLabel?.text = postArray[indexPath.row].message
+        cell.categoryLabel?.text = postArray[indexPath.row].category
         cell.dateLabel?.text = postArray[indexPath.row].postTime
+
         
         return cell
         

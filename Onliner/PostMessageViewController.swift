@@ -12,43 +12,64 @@ import Firebase
 class PostMessageViewController: UIViewController {
     
     @IBOutlet var messageTextView: UITextView!
+    @IBOutlet var categorychoiceField: UITextField!
     var message = ""
+    var category = ""
     var name = ""
     var postTime = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+      // categorychoiceField.placeholder = "悩み、Tipsなど"
     }
     
     @IBAction func post() {
         message = messageTextView.text!
+        category = categorychoiceField.text!
+        //ユーザーデフォルトという名前のインスタンスの倉庫から、ユーザーネームを取り出し
         name = UserDefaults.standard.object(forKey: "loginName") as! String
+       
         
+        
+        //現在日時をdateに代入
         let date = Date()
+        //デートフォーマッターのインスタンスを作成
         let dateFmt = DateFormatter()
         
-        dateFmt.dateFormat = "yyyy/mm/dd"
+        //日付の書式の設定
+        dateFmt.dateFormat = "yyyy/MM/dd HH:mm"
+        //日時文字列からDate型の日付を生成する
         postTime = (dateFmt.string(from: date))
+        //print(dateFmt.string(from: date))
         
+        //firebaseインスタンスの作成、初期化かな
         let dataBase = Firestore.firestore()
-        //firebaseデータベースに保存する
+        
+        //書き込まれたデータをfirebaseデータベースに書き込み
+        //ドキュメントの作成
+        //ドキュメントをusersコレクションに保存していく
+        //key:value
         dataBase.collection("users").document().setData([
                     "userName": name,
                     "message": message,
-                    "postTime":postTime,
+                    "category": category,
+                    "postTime": postTime,
                     "lastUpdated": FieldValue.serverTimestamp()
                 ]) { error in
                 if error != nil {
-                        // エラー処理
                         print("エラー")
                         return
                     }
-                    // 成功したときの処理
+        // 成功したとき
                     self.dismiss(animated: true, completion: nil)
                 }
-
         
+      
+        
+        
+
     }
+
 
 }

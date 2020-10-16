@@ -15,6 +15,7 @@ class TimelineViewCell: UITableViewCell {
     @IBOutlet var messageLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var likeButton: UIButton!
+    @IBOutlet var categoryLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +30,7 @@ class TimelineViewCell: UITableViewCell {
     
     @IBAction func touchDownLikeButton() {
         
-        likeButton.setImage(UIImage(named: "doneLikeButton"), for: .normal)
+        likeButton.setImage(UIImage(named: "donebookmarkButton"), for: .normal)
         
     }
     

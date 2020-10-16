@@ -13,11 +13,12 @@ class ViewController: UIViewController {
     
     @IBOutlet var nameTextField: UITextField!
     
+    
    
     override func viewDidLoad() {//画面が生成された時に呼ばれる、初めて表示された時に呼ばれる
         super.viewDidLoad()
         
-        nameTextField.placeholder = "Name"
+        nameTextField.placeholder = "ニックネーム"
     }
    //「名前」のところに、何も表示しない
     override func viewWillAppear(_ animated: Bool) {//画面が表示される直前に呼ばれる
@@ -35,14 +36,15 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func login() {
+    @IBAction func loginStudents() {
         
         //「名前」のところに、何かが入力されている時
         if nameTextField.text != "" {
             
+            //ユーザーデフォルトというインスタンスを作り倉庫を作る
             let userDefaults = UserDefaults.standard
-            //ユーザーデフォルトに、ユーザーネームを保存
-            userDefaults.set(nameTextField.text, forKey: "loginName")
+            //ユーザーデフォルトに、ユーザーネ-ムを書き込み
+            userDefaults.set(String(nameTextField.text!) + " (生徒)", forKey: "loginName")
             //タイムライン画面に移動する
             performSegue(withIdentifier: "toTimeline", sender: nil)
             
@@ -53,6 +55,30 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func loginTeacher() {
+        
+        //「名前」のところに、何かが入力されている時
+        if nameTextField.text != "" {
+            
+            //ユーザーデフォルトというインスタンスを作り倉庫を作る
+            let userDefaults = UserDefaults.standard
+            //ユーザーデフォルトに、ユーザーネ-ムを書き込み
+            userDefaults.set(String(nameTextField.text!) + " (教員)", forKey: "loginName")
+            //タイムライン画面に移動する
+            performSegue(withIdentifier: "toTimeline", sender: nil)
+            
+            
+            
+        }else {
+           // print("名前を入力してください")
+        }
+        
+        
+        
+        
+    }
+       
 
 
 }

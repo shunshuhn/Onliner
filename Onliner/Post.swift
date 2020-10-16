@@ -13,15 +13,16 @@ class Post{
     
     let userName: String
     let message: String
+    let category: String
     let postTime: String
     let lastUpdate: Timestamp
     
-   
 
     init(data: [String:Any]) {
         userName = data["userName"] as! String
         message = data["message"] as! String
+        category = data["category"] as! String
         postTime = data["postTime"]as! String
-        lastUpdate = data["lastUpdate"]as! Timestamp
+        lastUpdate = data["lastUpdated"]as! Timestamp
     }
 }
