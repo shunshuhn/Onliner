@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {//画面が生成された時に呼ばれる、初めて表示された時に呼ばれる
         super.viewDidLoad()
         
-        nameTextField.placeholder = "ニックネーム"
+        nameTextField.placeholder = "Nick Name"
     }
    //「名前」のところに、何も表示しない
     override func viewWillAppear(_ animated: Bool) {//画面が表示される直前に呼ばれる

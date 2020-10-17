@@ -21,7 +21,7 @@ class PostMessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      // categorychoiceField.placeholder = "悩み、Tipsなど"
+       categorychoiceField.placeholder = "タイトル"
     }
     
     @IBAction func post() {

@@ -16,19 +16,22 @@
 		7D0BE7C42534A03C005B2167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0BE7C22534A03C005B2167 /* LaunchScreen.storyboard */; };
 		7D0BE7CE2534B18B005B2167 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BE7CD2534B18B005B2167 /* Post.swift */; };
 		7D0BE7D22534B21B005B2167 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BE7D12534B21B005B2167 /* TimelineViewController.swift */; };
+		7D142F66253A784B007EBC17 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D142F65253A784B007EBC17 /* frame.png */; };
 		7D22BA9225363188006422D9 /* PostMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22BA9125363188006422D9 /* PostMessageViewController.swift */; };
 		7D22BA95253634D5006422D9 /* TimelineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22BA93253634D5006422D9 /* TimelineViewCell.swift */; };
 		7D22BA96253634D5006422D9 /* TimelineViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA94253634D5006422D9 /* TimelineViewCell.xib */; };
 		7D22BA98253652EA006422D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D22BA97253652EA006422D9 /* GoogleService-Info.plist */; };
-		7DB3B5DF2539FC7800FB2B58 /* donebookmarkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DB3B5DD2539FC7700FB2B58 /* donebookmarkButton.png */; };
-		7DB3B5E02539FC7800FB2B58 /* bookmarkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DB3B5DE2539FC7800FB2B58 /* bookmarkButton.png */; };
-		7DB3B5E2253A02A000FB2B58 /* cellbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DB3B5E1253A02A000FB2B58 /* cellbackground.png */; };
+		7DABA32E253A4F4D00F2A07D /* login_teacher.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DABA32B253A4F4B00F2A07D /* login_teacher.png */; };
+		7DABA330253A4F4D00F2A07D /*  login_student.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DABA32D253A4F4C00F2A07D /*  login_student.png */; };
+		7DABA332253A534F00F2A07D /* postbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DABA331253A534F00F2A07D /* postbutton.png */; };
+		7DABA334253A53B500F2A07D /* title_setsumei.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DABA333253A53B500F2A07D /* title_setsumei.png */; };
+		7DCF2E0D253A387600C87853 /*  onLINE_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DCF2E0C253A387600C87853 /*  onLINE_icon_white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40A6692145609F8A1C7A600C /* Pods-Onliner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onliner.debug.xcconfig"; path = "Target Support Files/Pods-Onliner/Pods-Onliner.debug.xcconfig"; sourceTree = "<group>"; };
 		68AAB14601E5D95B5FDA3FD2 /* Pods_Onliner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onliner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D0BE7B42534A036005B2167 /* Onliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0BE7B42534A036005B2167 /* Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Online.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0BE7B72534A036005B2167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0BE7B92534A036005B2167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D0BE7BB2534A036005B2167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,13 +41,18 @@
 		7D0BE7C52534A03C005B2167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D0BE7CD2534B18B005B2167 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7D0BE7D12534B21B005B2167 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		7D142F65253A784B007EBC17 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame.png; path = ../../frame.png; sourceTree = "<group>"; };
+		7D211647253A6876000F7918 /* haertdone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = haertdone.png; path = /Users/harukaito/Downloads/Onliner/Onliner/haertdone.png; sourceTree = "<absolute>"; };
+		7D211649253A688E000F7918 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = ../heart.png; sourceTree = "<group>"; };
 		7D22BA9125363188006422D9 /* PostMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewController.swift; sourceTree = "<group>"; };
 		7D22BA93253634D5006422D9 /* TimelineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewCell.swift; sourceTree = "<group>"; };
 		7D22BA94253634D5006422D9 /* TimelineViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineViewCell.xib; sourceTree = "<group>"; };
 		7D22BA97253652EA006422D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7DB3B5DD2539FC7700FB2B58 /* donebookmarkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donebookmarkButton.png; sourceTree = "<group>"; };
-		7DB3B5DE2539FC7800FB2B58 /* bookmarkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmarkButton.png; sourceTree = "<group>"; };
-		7DB3B5E1253A02A000FB2B58 /* cellbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbackground.png; sourceTree = "<group>"; };
+		7DABA32B253A4F4B00F2A07D /* login_teacher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_teacher.png; path = ../../login_teacher.png; sourceTree = "<group>"; };
+		7DABA32D253A4F4C00F2A07D /*  login_student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " login_student.png"; sourceTree = "<group>"; };
+		7DABA331253A534F00F2A07D /* postbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = postbutton.png; path = ../../postbutton.png; sourceTree = "<group>"; };
+		7DABA333253A53B500F2A07D /* title_setsumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_setsumei.png; sourceTree = "<group>"; };
+		7DCF2E0C253A387600C87853 /*  onLINE_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " onLINE_icon_white.png"; sourceTree = "<group>"; };
 		BC0C4CE69B419A797CE7477B /* Pods-Onliner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onliner.release.xcconfig"; path = "Target Support Files/Pods-Onliner/Pods-Onliner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +90,7 @@
 		7D0BE7B52534A036005B2167 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D0BE7B42534A036005B2167 /* Onliner.app */,
+				7D0BE7B42534A036005B2167 /* Online.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,9 +98,14 @@
 		7D0BE7B62534A036005B2167 /* Onliner */ = {
 			isa = PBXGroup;
 			children = (
-				7DB3B5E1253A02A000FB2B58 /* cellbackground.png */,
-				7DB3B5DE2539FC7800FB2B58 /* bookmarkButton.png */,
-				7DB3B5DD2539FC7700FB2B58 /* donebookmarkButton.png */,
+				7D142F65253A784B007EBC17 /* frame.png */,
+				7D211647253A6876000F7918 /* haertdone.png */,
+				7D211649253A688E000F7918 /* heart.png */,
+				7DABA333253A53B500F2A07D /* title_setsumei.png */,
+				7DABA331253A534F00F2A07D /* postbutton.png */,
+				7DABA32D253A4F4C00F2A07D /*  login_student.png */,
+				7DABA32B253A4F4B00F2A07D /* login_teacher.png */,
+				7DCF2E0C253A387600C87853 /*  onLINE_icon_white.png */,
 				7D0BE7B72534A036005B2167 /* AppDelegate.swift */,
 				7D0BE7B92534A036005B2167 /* SceneDelegate.swift */,
 				7D0BE7BB2534A036005B2167 /* ViewController.swift */,
@@ -137,7 +150,7 @@
 			);
 			name = Onliner;
 			productName = Onliner;
-			productReference = 7D0BE7B42534A036005B2167 /* Onliner.app */;
+			productReference = 7D0BE7B42534A036005B2167 /* Online.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,11 +194,14 @@
 				7D0BE7C42534A03C005B2167 /* LaunchScreen.storyboard in Resources */,
 				7D0BE7C12534A03C005B2167 /* Assets.xcassets in Resources */,
 				7D22BA98253652EA006422D9 /* GoogleService-Info.plist in Resources */,
-				7DB3B5DF2539FC7800FB2B58 /* donebookmarkButton.png in Resources */,
+				7DABA330253A4F4D00F2A07D /*  login_student.png in Resources */,
 				7D22BA96253634D5006422D9 /* TimelineViewCell.xib in Resources */,
-				7DB3B5E2253A02A000FB2B58 /* cellbackground.png in Resources */,
+				7DCF2E0D253A387600C87853 /*  onLINE_icon_white.png in Resources */,
+				7DABA32E253A4F4D00F2A07D /* login_teacher.png in Resources */,
 				7D0BE7BF2534A036005B2167 /* Main.storyboard in Resources */,
-				7DB3B5E02539FC7800FB2B58 /* bookmarkButton.png in Resources */,
+				7DABA334253A53B500F2A07D /* title_setsumei.png in Resources */,
+				7D142F66253A784B007EBC17 /* frame.png in Resources */,
+				7DABA332253A534F00F2A07D /* postbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,15 +405,16 @@
 			baseConfigurationReference = 40A6692145609F8A1C7A600C /* Pods-Onliner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YF7TS46W4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Onliner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.haruka.ito1012.Onliner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistechshunshun.Online;
+				PRODUCT_NAME = Online;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,15 +425,16 @@
 			baseConfigurationReference = BC0C4CE69B419A797CE7477B /* Pods-Onliner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YF7TS46W4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Onliner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.haruka.ito1012.Onliner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistechshunshun.Online;
+				PRODUCT_NAME = Online;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

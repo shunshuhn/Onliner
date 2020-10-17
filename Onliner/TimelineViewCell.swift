@@ -30,7 +30,7 @@ class TimelineViewCell: UITableViewCell {
     
     @IBAction func touchDownLikeButton() {
         
-        likeButton.setImage(UIImage(named: "donebookmarkButton"), for: .normal)
+        likeButton.setImage(UIImage(named: "heartdone"), for: .normal)
         
     }
     
