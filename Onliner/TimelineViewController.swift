@@ -63,7 +63,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     //セルの高さの調整
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 220
+        return 300
     }
     
     //セルの表示

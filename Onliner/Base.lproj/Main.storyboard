@@ -15,28 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-br-TYy">
-                                <rect key="frame" x="76" y="337" width="262" height="69"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image=" login_student.png">
-                                    <color key="titleColor" red="1" green="0.63137254899999995" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginStudents" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkb-hf-0Ui"/>
-                                    <segue destination="FVn-fg-ptk" kind="presentation" identifier="toTimeline" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="zPx-ok-jLI"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ニックネーム" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtg-AU-Uew">
                                 <rect key="frame" x="85" y="148" width="244" height="34"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-br-TYy">
+                                <rect key="frame" x="76" y="376" width="262" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.63137254899999995" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="学生としてログイン">
+                                    <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginStudents" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkb-hf-0Ui"/>
+                                    <segue destination="FVn-fg-ptk" kind="presentation" identifier="toTimeline" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="zPx-ok-jLI"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYl-00-fyz">
-                                <rect key="frame" x="76" y="414" width="262" height="69"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="login_teacher.png">
-                                    <color key="titleColor" red="1" green="0.63137254899999995" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="76" y="454" width="262" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.63137254899999995" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="教員としてログイン">
+                                    <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginTeacher" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLW-jK-ZjN"/>
@@ -46,16 +48,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYl-00-fyz" secondAttribute="trailing" constant="76" id="04Q-0a-E0b"/>
-                            <constraint firstItem="wYl-00-fyz" firstAttribute="top" secondItem="ZLV-br-TYy" secondAttribute="bottom" constant="8" id="90Z-Hy-hiZ"/>
+                            <constraint firstItem="ZLV-br-TYy" firstAttribute="top" secondItem="mtg-AU-Uew" secondAttribute="bottom" constant="194" id="Cxm-gR-dpe"/>
                             <constraint firstItem="wYl-00-fyz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="CyI-zg-UVD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLV-br-TYy" secondAttribute="trailing" constant="76" id="F2w-Gj-U8f"/>
                             <constraint firstItem="ZLV-br-TYy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="JE6-iJ-jCN"/>
-                            <constraint firstItem="wYl-00-fyz" firstAttribute="top" secondItem="ZLV-br-TYy" secondAttribute="bottom" constant="8" id="N3c-Sf-2Sd"/>
                             <constraint firstItem="mtg-AU-Uew" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="SYn-Pc-Efi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wYl-00-fyz" secondAttribute="bottom" constant="379" id="Zu2-cj-bb7"/>
-                            <constraint firstItem="ZLV-br-TYy" firstAttribute="top" secondItem="mtg-AU-Uew" secondAttribute="bottom" constant="155" id="i6e-T9-JA5"/>
+                            <constraint firstItem="mtg-AU-Uew" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="jDR-g8-7EZ"/>
+                            <constraint firstItem="wYl-00-fyz" firstAttribute="top" secondItem="ZLV-br-TYy" secondAttribute="bottom" constant="49" id="qgH-Qc-JXl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mtg-AU-Uew" secondAttribute="trailing" constant="85" id="uFI-UC-sXh"/>
-                            <constraint firstItem="mtg-AU-Uew" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="wUe-52-O7I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -134,7 +135,7 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-0e-2lb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-0e-2lb">
                                 <rect key="frame" x="25" y="132" width="364" height="34"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -199,8 +200,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" login_student.png" width="312" height="69"/>
-        <image name="login_teacher.png" width="312" height="69"/>
         <image name="postbutton.png" width="206" height="50"/>
         <image name="title_setsumei.png" width="292" height="64"/>
     </resources>
